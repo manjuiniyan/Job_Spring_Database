@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class Job {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
 
     @Column(name = "job_title")
     private String jobTitle;
@@ -32,13 +32,16 @@ public class Job {
     private String previousExperience;
 
     @Column(name = "salary_range")
-    private int salaryRange;
+    private Integer salaryRange;
 
     @Column(name = "job_location")
     private String jobLocation;
 
     @Column(name = "job_type")
     private String jobType;
+
+    @Column(name = "company_name")
+    private String company;
     
     
 }
