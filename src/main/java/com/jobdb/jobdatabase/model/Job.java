@@ -19,6 +19,7 @@ public class Job {
     @GeneratedValue
     private Integer id;
 
+
     @Column(name = "job_title")
     private String jobTitle;
 
